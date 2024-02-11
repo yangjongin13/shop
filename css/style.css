@@ -1,0 +1,142 @@
+body{background: black;
+	color: black;
+min-height: 100vh;
+display: flex;
+flex-direction: column;
+}
+main {
+	flex: 1 1 auto
+}
+footer {
+	background: white;
+	padding: 50px;
+}
+.gds__item {
+	border: 1px solid white;
+	color: white;
+
+}
+.gds__list {
+	list-style: none;
+}
+.shop{
+	max-width: 900px;
+	margin: 100px auto;
+}
+.shop_img {
+	width: 100%;
+}
+.shop_btn{
+	width: 200px;
+	font-size: 30px;
+	background: black;
+	color: white;
+	border-radius: 50px;
+	height: 80px;
+}
+
+.slider_img {
+	width: 100%;
+}
+.header_menu{
+	position: absolute;
+	z-index: 1;
+	display: none;
+	color: white;
+}
+.active{
+	display: block;
+}
+.theme__list{
+	list-style: none;
+	display: flex;
+}
+.theme__item{
+	margin-right: 15px;
+}
+.theme__btn_light{
+	background: white;
+	width: 20px;
+	height: 20px;
+	border-radius: 100px;
+	cursor: pointer;
+	transition: 1s;
+}
+.theme__btn_light:hover{
+	transform: scale(1.1);
+	box-shadow: 0 0 10px rgba(255,255,255,1.0);
+}
+.theme__btn_dark{
+	background: grey;
+	width: 20px;
+	height: 20px;
+	border-radius: 100px;
+	cursor: pointer;
+	transition: 1s;
+
+}
+.theme__btn_dark:hover{
+	transform: scale(1.1);
+	box-shadow: 0 0 10px rgba(255,255,255,1.0);
+}
+.burger__line{
+	width: 30px;
+	height: 7px;
+	margin: 4px;
+	background: white;
+}
+.burger{
+	display: none;
+}
+.hide-f1{
+	display: none;
+}
+@media screen and (max-width: 960px) {
+.hader_list{
+	display: flex;
+	flex-direction: column;
+	position: absolute;
+	right: 0;
+	background: grey;
+	top: 0;
+	height: 100vh;
+	justify-content: center;
+	align-items: center;
+	width: 40;
+	z-index: 3;
+	transform: translate(100px);
+	transition: all 2s ease;
+
+
+}
+.burger{
+	display: block;
+	z-index: 4;
+	.oplsanle_text{
+		text-align: center;
+		margin: 10px auto;
+
+	}
+	.header_item{
+		margin: auto 0;
+		
+	}
+}
+.hide{
+	transform: translateX(0);
+	transition: all is ease;
+}
+}
+.basket__container{
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	padding: 10px;
+	display: flex;
+	align-items: center;
+	gap: 5px;
+
+}
+.basket__prise{
+	order: -1;
+}

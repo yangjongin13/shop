@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>магазин изделий из эпоксидной смолы</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="itc-slider.css">
+</head>
+<body>
+	<header>
+		<div class="h_container">
+		<button class="btn_menu" id="btn-menu">
+			+++
+			Меню
+		</button>
+		<div class="header_menu" id="menu">
+			<ul class="menu_list">
+				<li class="menu_item"><a href="#" class="menu_link">вход</a></li>
+				<li class="menu_item"><a href="#" class="menu_link">корзина</a></li>
+				<li class="menu_item"><a href="#" class="menu_link">акция</a></li>
+				<li class="menu_item"><a href="#" class="menu_link">реклама</a></li>
+				<li class="menu_item"><a href="#" class="menu_link">сладенькие капибарки</a></li>	
+			</ul>
+			<div class="theme">
+				<ul class="theme__list">
+					<li class="theme__item">
+						<div class="theme__btn_light" onclick="choiseWhite()"></div>
+					</li>
+					<li class="theme__item">
+						<div class="theme__btn_dark" onclick="choiseDark()"></div>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<nav class="header_nav">
+			<ul class="header_list">
+				<li class="header_item"><a class="header_link">главная</a></li>
+				<li class="header_item"><a class="header_link">корзина</a></li>
+				<li class="header_item"><a class="header_link">профиль</a></li>
+				<li class="header_item"><a class="header_link">о нас</a></li>
+			</ul>
+		</nav>
+		<div class="burger" onclick="burger()">
+		<div class="burger__line"></div>
+		<div class="burger__line"></div>
+		<div class="burger__line"></div>
+	</div>
+	</div>
+	</header>
+	<section class="video">
+		<video autoplay muted loop id="Ultrakill"> 
+			<source src="video/cat.mp4" tupe="vedeo/mp4">
+
+		</video>
+		<div class="video_content">
+			<button class="">play</button>
+			<button onclick="mute()" class="">mute</button>
+			<button class="">play</button>
+			<button onclick="next()" class="">next</button>
+		</div>
+	</section>
+<section class="shop">
+	
+	<img class="shop_img" src="https://avatars.mds.yandex.net/get-mpic/5253050/img_id5203631544266096190.jpeg/orig">\
+	<h1 class="shop_title">кулон из эпоксидной смолы</h1> 
+	<p class="shop_desc">украшение</p>
+	<div class="price">
+		<h1 class="price_title">цена</h1>
+		<h1 class="price_desc">2765894976685949330984564839202938746575483920129387454382901293874673829$</h1>
+	</div>
+	<button class="shop_btn" id="btn1" onclick="buy()">купить</button>
+</section>
+<div class="itc-slider" data-slider="itc-slider">
+  <div class="itc-slider__wrapper">
+    <div class="itc-slider__items">
+      <div class="itc-slider__item">
+        <!-- Контент 1 слайда -->
+        <img class="slider_img" src="http://funart.pro/uploads/posts/2021-04/1618311250_49-funart_pro-p-vombat-i-kapibara-zhivotnie-krasivo-foto-52.jpg">
+      </div>
+      <div class="itc-slider__item">
+        <!-- Контент 2 слайда -->
+         <img class="slider_img" src="https://abrakadabra.fun/uploads/posts/2022-03/1646110418_1-abrakadabra-fun-p-kolivan-iz-trekh-bogatirei-2.jpg">
+      </div>
+      <div class="itc-slider__item">
+        <!-- Контент 3 слайда -->
+         <img class="slider_img" src="https://avatars.mds.yandex.net/i?id=03eaf25761b36fc23f8d2fe701262529867568a1-9214528-images-thumbs&n=13">
+      </div>
+    </div>
+  </div>
+  <!-- Кнопки для перехода к предыдущему и следующему слайду -->
+  <button class="itc-slider__btn itc-slider__btn_prev"></button>
+  <button class="itc-slider__btn itc-slider__btn_next"></button>
+</div>
+<div class="map">
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d34346.558950684965!2d40.56049765903497!3d57.45006078067496!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b2b28955555555%3A0x470f270c57884f61!2z0JrQu9Cw0LTQsdC40YnQtS4!5e0!3m2!1sru!2sru!4v1683969236216!5m2!1sru!2sru" width="1000" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>	
+</div>
+<div class="map">
+	<iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A25ab1def28375cfde7a3322a5c3710b947a8084089337e641d4654c0621d02be&amp;source=constructor" width="1000" height="400" frameborder="0"></iframe>
+</div>
+<script type="text/javascript" src="script/script.js"></script>
+<script src="itc-slider.js"></script>
+<script type="text/javascript" src="script/menu.js"></script>
+<script type="text/javascript" src="script/theme.js"></script>
+<script type="text/javascript" src="script/burger.js"></script>
+<script type="text/javascript" src="script/playlist.js"></script>
+
+</body>
+</html>
+</section>
+	<section class="basket">
+		<div class="basket__container">
+			<a class="basket__link" href="">
+				<img src="basket__picture"> src="img/">
+				<p class=busket__prise>0</p>
+		</div>
+</section>
+
+
